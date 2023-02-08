@@ -29,8 +29,8 @@ public class MavenWrapperDownloader {
    * Default URL to download the maven-wrapper.jar from, if no 'downloadUrl' is provided.
    */
   private static final String DEFAULT_DOWNLOAD_URL =
-        "https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/" + WRAPPER_VERSION
-              + "/maven-wrapper-" + WRAPPER_VERSION + ".jar";
+      "https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/" + WRAPPER_VERSION
+          + "/maven-wrapper-" + WRAPPER_VERSION + ".jar";
 
   /**
    * Path to the maven-wrapper.properties file, which might contain a downloadUrl property to use instead of the
@@ -82,7 +82,7 @@ public class MavenWrapperDownloader {
     if (!outputFile.getParentFile().exists()) {
       if (!outputFile.getParentFile().mkdirs()) {
         System.out.println("- ERROR creating output directory '" + outputFile.getParentFile().getAbsolutePath()
-              + "'");
+            + "'");
       }
     }
     System.out.println("- Downloading to: " + outputFile.getAbsolutePath());
@@ -98,7 +98,7 @@ public class MavenWrapperDownloader {
   }
 
   private static void downloadFileFromURL(String urlString, File destination)
-        throws Exception {
+      throws Exception {
     if (System.getenv("MVNW_USERNAME") != null && System.getenv("MVNW_PASSWORD") != null) {
       String username = System.getenv("MVNW_USERNAME");
       char[] password = System.getenv("MVNW_PASSWORD").toCharArray();
